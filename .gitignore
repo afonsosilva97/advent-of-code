@@ -1,4 +1,4 @@
 .idea
 
 # inputs shouldn't be checked in
-**/input.*
+**/*input.*

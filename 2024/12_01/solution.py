@@ -1,4 +1,4 @@
-def __convert_input_to_ordered_value_list(input_lines):
+def __convert_input_to_value_list(input_lines):
     lines = input_lines.splitlines()
 
     array_1 = []
@@ -41,7 +41,7 @@ def __run_part_two(array_1, array_2):
 def run(input_lines, test_name):
     print(f"{test_name}")
 
-    array_1, array_2 = __convert_input_to_ordered_value_list(input_lines)
+    array_1, array_2 = __convert_input_to_value_list(input_lines)
 
     result_part_one = __run_part_one(array_1, array_2)
     print(f"result_part_one: {result_part_one}")
