@@ -29,11 +29,6 @@ def get_answer_part_1(fresh_ingredients_ranges, available_ingredients):
 
     return num_available_ingredients
 
-
-def get_overlap(a, b):
-    return max(0, min(a[1], b[1]) - max(a[0], b[0]))
-
-
 def get_answer_part_2(fresh_ingredients_ranges):
     sorted_ranges = sorted(fresh_ingredients_ranges, key=lambda x: x[0])
     merged_ranges = [sorted_ranges[0]]
